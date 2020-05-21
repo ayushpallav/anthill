@@ -26,7 +26,7 @@ An intelligent general purpose automation system.
 Features
 --------
 
-* TODO
+*
 
 Credits
 -------
