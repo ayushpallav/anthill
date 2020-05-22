@@ -39,7 +39,7 @@ setup(
     },
     install_requires=requirements,
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description="",
     include_package_data=True,
     keywords='anthill',
     name='anthill',
@@ -48,6 +48,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/ayushpallav/anthill',
-    version='uglyCoder',
+    version='1.0.0',
     zip_safe=False,
 )
