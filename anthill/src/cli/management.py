@@ -1,15 +1,17 @@
-from anthill.src.topology.transform import TransformNest
+from anthill.src.topology.topology import Anthill
 
 
 class Nest:
     """
     Class to handle all operations on nest including build and execution
     """
+    instance = None
+
     def __init__(self, nest):
         self.nest = nest
 
     def build(self):
-        _nest = TransformNest(nest=self.nest).transform()
+        self.instance = Anthill(nest=self.nest).build()
 
     def run(self):
         pass

@@ -25,11 +25,19 @@ def build(nest, run):
     """
     Build anthill using the yml file provided
     """
-    click.echo("Ants building your anthill, hold tight !")
     _nest = json.dumps(yaml.safe_load(nest))
     nest_obj  = Nest(nest=_nest)
-    nest_obj.build()
-    click.echo("Anthill built successfully !")
-    if run:
-        nest_obj.run()
+    try:
+        nest_obj.build()
+    except Exception as err:
+        click.echo(f"Aborting build ... \n {err.message}")
+    else:
+        click.echo("Anthill built successfully !")
+        if run:
+            try:
+                nest_obj.run()
+            except Exception as err:
+                click.echo(f"Aborting execution ... \n {err.message}")
+            else:
+                click.echo("Anthill initiated successfully !")
     return 0

@@ -9,10 +9,6 @@ anthill
 .. image:: https://img.shields.io/travis/ayushpallav/anthill.svg
         :target: https://travis-ci.com/ayushpallav/anthill
 
-.. image:: https://readthedocs.org/projects/anthill/badge/?version=latest
-        :target: https://anthill.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
 
 
 
