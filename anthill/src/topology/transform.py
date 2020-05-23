@@ -127,11 +127,8 @@ class TransformNest:
         for building the Anthill
         """
         self.action_map = self.gen_action_map()
-        print(":::::::::::::", self.action_map)
         self.lookup_map = self.gen_lookup_map()
-        print(":::::::::::::", self.lookup_map)
         self.adj_list = self.gen_adj_list()
-        print(":::::::::::::", self.adj_list)
 
         return nmt(
             self.action_map,
