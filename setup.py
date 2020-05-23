@@ -34,7 +34,7 @@ setup(
     description="An intelligent general purpose automation system.",
     entry_points={
         'console_scripts': [
-            'anthill=anthill.cli:main',
+            'anthill=anthill.src.cli.core:main',
         ],
     },
     install_requires=requirements,
