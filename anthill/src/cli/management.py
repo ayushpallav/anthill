@@ -14,4 +14,4 @@ class Nest:
         self.instance = Anthill(nest=self.nest).build()
 
     def run(self):
-        pass
+        Anthill.run(self.instance)

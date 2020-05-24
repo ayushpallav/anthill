@@ -6,8 +6,10 @@ import sys
 import click
 import yaml
 import json
+import pathlib
 
 from .management import Nest
+from anthill import __version__
 
 
 @click.group()
@@ -17,6 +19,10 @@ def main():
     """
     pass
 
+
+@main.command()
+def version():
+    click.echo("Version: " + __version__)
 
 @main.command()
 @click.argument('nest', type=click.File('r'))

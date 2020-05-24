@@ -86,3 +86,6 @@ class Anthill:
             self.update_lookup_map(inx)
         self._build()
         return self.anthill
+
+    def run(cls, instance):
+        pass
