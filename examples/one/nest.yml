@@ -1,5 +1,6 @@
 node:
   - rule: "rule_1.py"
+  - environment: ".envs"
 action_1:
   - rule: "rule_2.py"
   - depends_on:
