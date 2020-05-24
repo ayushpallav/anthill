@@ -1,0 +1,20 @@
+node:
+  - rule: "rule_1.json"
+action_1:
+  - rule: "rule_2.json"
+  - depends_on:
+    - node
+action_2:
+  - rule: "rule_2.json"
+  - depends_on: 
+    - node
+    - 'action_3'
+action_3:
+  - rule: "rule_2.json"
+  - depends_on: 
+    - action_1
+action_4:
+  - rule: "rule_2.json"
+  - depends_on:
+    - action_2
+    - action_3
