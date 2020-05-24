@@ -87,5 +87,13 @@ class Anthill:
         self._build()
         return self.anthill
 
-    def run(cls, instance):
-        pass
+    @classmethod
+    def run(cls, instance, _dir):
+        """
+        Executes the anthill instance, looking for
+        scripts in provided _dir
+        nest and related scripts need to be in the same folder
+        """
+        for action in instance:
+            rule = action.get('meta').get('rule')
+            exec(open(_dir/rule).read())

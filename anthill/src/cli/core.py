@@ -31,8 +31,9 @@ def build(nest, run):
     """
     Build anthill using the yml file provided
     """
+    _dir = pathlib.Path(nest.name).absolute().parent
     _nest = json.dumps(yaml.safe_load(nest))
-    nest_obj  = Nest(nest=_nest)
+    nest_obj  = Nest(nest=_nest, _dir=_dir)
     try:
         nest_obj.build()
     except Exception as err:
