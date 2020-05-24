@@ -1,4 +1,3 @@
-import json
 import jsonschema
 import logging
 from collections import namedtuple
@@ -7,8 +6,8 @@ from .constants import Schema, Options
 
 log = logging.getLogger(__name__)
 
-# nmt = nest meta tuple
-nmt = namedtuple('nmt', ['action_map', 'lookup_array', 'adj_list'])
+# nmt = nest_meta_tuple
+nmt = namedtuple('nmt', ['action_map', 'lookup_map', 'adj_list'])
 
 
 class TransformNest:
@@ -32,11 +31,14 @@ class TransformNest:
     adj_list = None
 
     def __init__(self, nest):
-        self.nest = json.loads(nest)
+        self.nest = nest
 
     def is_valid(self):
         """
         Check Validity of pre-processed nest configuration
+        TODO: Check for cyclic dependency
+        TODO: Apart from nest node, no other action can have empty dependency
+        TODO: Other validity requirements for the nest
         """
         try:
             jsonschema.validate(
