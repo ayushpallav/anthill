@@ -10,7 +10,11 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=7.0', ]
+requirements = [
+    'Click>=7.0',
+    'PyYAML==5.3.1',
+    'jsonschema==3.2.0'
+]
 
 setup_requirements = [ ]
 
@@ -34,7 +38,7 @@ setup(
     description="An intelligent general purpose automation system.",
     entry_points={
         'console_scripts': [
-            'anthill=anthill.cli:main',
+            'anthill=anthill.src.cli.core:main',
         ],
     },
     install_requires=requirements,
@@ -48,6 +52,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/ayushpallav/anthill',
-    version='1.0.0',
+    version='1.0.2',
     zip_safe=False,
 )
