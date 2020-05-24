@@ -7,11 +7,15 @@ class Nest:
     """
     instance = None
 
-    def __init__(self, nest):
+    def __init__(self, nest, _dir):
         self.nest = nest
+        self._dir = _dir
 
     def build(self):
         self.instance = Anthill(nest=self.nest).build()
 
     def run(self):
-        Anthill.run(self.instance)
+        Anthill.run(
+            instance=self.instance,
+            _dir=self._dir
+        )
