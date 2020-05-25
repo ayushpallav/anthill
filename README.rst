@@ -8,15 +8,16 @@ anthill
 
 .. image:: https://img.shields.io/travis/ayushpallav/anthill.svg
         :target: https://travis-ci.com/ayushpallav/anthill
-
-
+.. image:: https://readthedocs.org/projects/anthill-python/badge/?version=latest
+        :target: https://anthill-python.readthedocs.io/en/latest/
+        :alt: Documentation Status
 
 
 An intelligent general purpose automation system.
 
 
 * Free software: MIT license
-* Documentation:
+* Documentation: https://anthill-python.readthedocs.io/en/latest/
 
 
 Features
