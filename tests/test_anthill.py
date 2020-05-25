@@ -27,7 +27,7 @@ class TestAnthill(unittest.TestCase):
         runner = CliRunner()
         result = runner.invoke(cli.main)
         assert result.exit_code == 0
-        assert 'src.cli.core.main' in result.output
-        help_result = runner.invoke(cli.core.main, ['--help'])
+        assert 'src.cli.core' in result.output
+        help_result = runner.invoke(cli.core, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
