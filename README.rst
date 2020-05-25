@@ -16,7 +16,7 @@ An intelligent general purpose automation system.
 
 
 * Free software: MIT license
-* Documentation: https://anthill.readthedocs.io.
+* Documentation:
 
 
 Features
