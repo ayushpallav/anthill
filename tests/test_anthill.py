@@ -6,8 +6,8 @@
 import unittest
 from click.testing import CliRunner
 
-from anthill import anthill
-from anthill import cli
+from anthill import src
+from anthill.src import cli
 
 
 class TestAnthill(unittest.TestCase):
@@ -27,7 +27,7 @@ class TestAnthill(unittest.TestCase):
         runner = CliRunner()
         result = runner.invoke(cli.main)
         assert result.exit_code == 0
-        assert 'anthill.cli.main' in result.output
-        help_result = runner.invoke(cli.main, ['--help'])
+        assert 'src.cli.core.main' in result.output
+        help_result = runner.invoke(cli.core.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
