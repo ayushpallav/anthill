@@ -6,8 +6,8 @@
 import unittest
 from click.testing import CliRunner
 
-from anthill import anthill
-from anthill import cli
+from anthill import src
+from anthill.src import cli
 
 
 class TestAnthill(unittest.TestCase):
