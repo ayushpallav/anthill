@@ -55,3 +55,38 @@ To install from ``git``:
     $ git clone https://github.com/ayushpallav/anthill.git
     $ cd anthill
     $ python setup.py install
+
+Usage
+-----
+
+To build and run Anthill:
+
+::
+
+	anthill build /path/to/nest.yml -r
+
+Sample nest.yml
+---------------
+
+::
+
+	node:
+	  - rule: "rule_1.py"
+	action_1:
+	  - rule: "rule_2.py"
+	  - depends_on:
+	    - node
+	action_2:
+	  - rule: "rule_3.py"
+	  - depends_on: 
+	    - node
+	    - 'action_3'
+	action_3:
+	  - rule: "rule_4.py"
+	  - depends_on: 
+	    - action_1
+	action_4:
+	  - rule: "rule_5.py"
+	  - depends_on:
+	    - action_2
+	    - action_3
