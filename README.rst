@@ -7,7 +7,7 @@ An intelligent general purpose automation system.
 
 |pypi| |build-status| |readthedocs|
 
-:Version: 1.3.0
+:Version: 1.0.3
 :Download: https://pypi.org/project/anthill/
 :Documentation: https://anthill-python.readthedocs.io/en/latest/
 
