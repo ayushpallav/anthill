@@ -1,4 +1,4 @@
-.. image:: https://github.com/ayushpallav/anthill/blob/documentation/docs/images/anthill-small.png
+.. image:: https://github.com/ayushpallav/anthill/blob/master/docs/images/anthill-small.png
 
 =======
 Anthill
