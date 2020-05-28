@@ -1,34 +1,57 @@
-=======
-anthill
-=======
+.. image:: https://github.com/ayushpallav/anthill/blob/documentation/docs/images/anthill-small.png
 
+=======
+Anthill
+=======
+An intelligent general purpose automation system.
 
-.. image:: https://img.shields.io/pypi/v/anthill.svg
+|pypi| |build-status| |readthedocs|
+
+:Version: 1.3.0
+:Download: https://pypi.org/project/anthill/
+:Documentation: https://anthill-python.readthedocs.io/en/latest/
+
+.. |pypi| image:: https://img.shields.io/pypi/v/anthill.svg
         :target: https://pypi.python.org/pypi/anthill
 
-.. image:: https://img.shields.io/travis/ayushpallav/anthill.svg
+.. |build-status| image:: https://img.shields.io/travis/ayushpallav/anthill.svg
         :target: https://travis-ci.com/ayushpallav/anthill
-.. image:: https://readthedocs.org/projects/anthill-python/badge/?version=latest
+.. |readthedocs| image:: https://readthedocs.org/projects/anthill-python/badge/?version=latest
         :target: https://anthill-python.readthedocs.io/en/latest/
         :alt: Documentation Status
 
 
-An intelligent general purpose automation system.
-
-
 * Free software: MIT license
-* Documentation: https://anthill-python.readthedocs.io/en/latest/
 
 
-Features
---------
+What is a Nest?
+----------------
 
-*
+A Nest is a blueprint to be used for building an Anthill. It is to be provided as a .yml configuration,
+containing information about node and actions with their inter-dependencies.
 
-Credits
--------
+What is an Anthill?
+-------------------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+An Anthill is the order of execution of actions, build upon the nest configuration.
 
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+Installation
+------------
+
+You can install Anthill either via the Python Package Index (PyPI)
+or from source.
+
+To install using ``pip``:
+
+::
+
+
+    $ pip install anthill
+
+To install from ``git``:
+
+::
+
+    $ git clone https://github.com/ayushpallav/anthill.git
+    $ cd anthill
+    $ python setup.py install
