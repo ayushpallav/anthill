@@ -1,4 +1,5 @@
 .. image:: https://github.com/ayushpallav/anthill/blob/documentation/docs/images/anthill.png
+	:width: 10px
 
 =======
 Anthill
