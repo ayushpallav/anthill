@@ -1,11 +1,15 @@
+.. image:: https://github.com/ayushpallav/anthill/blob/documentation/docs/images/anthill.png
+
 =======
 Anthill
 =======
+An intelligent general purpose automation system.
 
 |pypi| |build-status| |readthedocs|
 
 :Version: 1.3.0
 :Download: https://pypi.org/project/anthill/
+:Documentation: https://anthill-python.readthedocs.io/en/latest/
 
 .. |pypi| image:: https://img.shields.io/pypi/v/anthill.svg
         :target: https://pypi.python.org/pypi/anthill
@@ -17,11 +21,7 @@ Anthill
         :alt: Documentation Status
 
 
-An intelligent general purpose automation system.
-
-
 * Free software: MIT license
-* Documentation: https://anthill-python.readthedocs.io/en/latest/
 
 
 What is a Nest?
@@ -48,7 +48,7 @@ To install using ``pip``:
 
     $ pip install anthill
 
-To install from ``source (git)``
+To install from ``git``:
 
 ::
 
