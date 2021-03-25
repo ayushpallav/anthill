@@ -12,7 +12,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=7.0',
-    'PyYAML==5.3.1',
+    'PyYAML==5.4',
     'jsonschema==3.2.0'
 ]
 
